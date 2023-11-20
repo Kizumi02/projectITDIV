@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1280, initial-scale=1">
+    <title>login</title>
+    
+    <link rel="stylesheet" href="styleregisterlogin.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="login-page.js"></script>
+    
+
+</head>
+<body>
+    <nav id="navbar">
+        <nav id="left">   
+            <img src="./icon.png">
+        </nav>
+        <nav id="right">
+            <div class="home">
+            <a href="Home.html">Home</a></div>
+            <div class="dropdown"><a href="#">Product</a>
+                <div class="dropdown-content"> 
+                    <a href="./healthcare.html"> Healthcare</a>
+                    <a href="#">Cosmetic</a>
+                    <a href="#">Misc</a>
+                </div>
+            </div>  
+            <div class="about-us">
+                <a href="/Home project it div/about us.html">About Us</a>
+            </div>
+            <div class="register">
+                <a href="./register.html">Register</a>
+            </div>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </nav>
+
+    
+    <div class="bodyform">
+    <form name="myForm" onsubmit="return validateForm()" method="post" id="login-form">
+        <div class="judul"style="text-align:center;">
+            <br>
+            <h1>Login</h1>
+        </div>
+        <div class="container">
+            <label for="email"><b>Email</b></label>
+            <br>
+            <input type="text" placeholder="Enter Email" name="email" id="email" class="email">
+            <div class="form-border"></div>
+            <br>
+            <br>
+        <div class="psw">
+          <label for="psw"><b>Password</b></label>
+        </div>
+        <br>
+          
+        <input type="password" placeholder="Enter Password"name="psw" id="password"class="password">
+        <div class="form-border"></div>
+        <div class="wrapper" style="margin-top: 3%;">    
+            <button type="submit"class="loginbtn" id="login-form-submit">Login</button>
+        </div>
+        </div>
+        <div class="account"style="text-align:center;">
+            Dont have an account yet?<a href="./register.html"style="color:teal">Register now !</a>
+            </div>
+
+    </form>
+</div>
+    <nav id="footer">
+        <div class="up">
+            <a href="https://id-id.facebook.com/"><img src="./facebook.png"width="20px"></a>
+            <a href="https://www.instagram.com/?hl=id"><img src="./ig.png"width="20px"></a>
+            <a href="https://twitter.com/i/flow/login"><img src="./twitter.jpg"width="20px"></a>
+        </div>
+        <div class="down">
+            Copyright © 2022[JimmyChristopher]. All Rights Reserved.
+        </div>
+    </nav>
+        
+      <!-- <script src="login.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1280, initial-scale=1">
+    <title>register</title>
+    <link rel="stylesheet" href="styleregisterlogin.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <nav id="navbar">
+        <nav id="left">   
+            <img src="./icon.png">
+        </nav>
+        <nav id="right">
+            <div class="home">
+            <a href="Home.html">Home</a></div>
+            <div class="dropdown"><a href="#">Product</a>
+                <div class="dropdown-content"> 
+                    <a href="./healthcare.html"> Healthcare</a>
+                    <a href="#">Cosmetic</a>
+                    <a href="#">Misc</a>
+                </div>
+            </div>  
+            <div class="about-us">
+                <a href="/Home project it div/about us.html">About Us</a>
+            </div>
+            <div class="register">
+                <a href="./register.html">Register</a>
+            </div>
+            <div class="login">
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="bodyformregister">
+    <form name="myForm" action="Home.html" onsubmit="return validateForm()" method="post" id="regisbox">
+        <div class="judul"style="text-align:center">
+            <br>
+            <h1>Register</h1>
+        </div>
+        <div class="container">
+            <label for="fname"><b>Full name</b></label>
+            <br>
+            <div class="form__input-group">
+                <input type="text" placeholder="Enter Full Name" name="fname" id="fname"class="password"required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form-border"></div>
+            <br>
+            <br>
+            <label for="email"><b>Email</b></label>
+            <br>
+            <div class="form__input-group">
+                <input type="email" placeholder="Enter Email" name="email" id="email" class="email"required>
+                <div class="form__input-error-message"></div>
+            </div>            
+            <div class="form-border"></div>
+            <br>
+            <br>
+            <span class="legend"><p> Gender</p></span>
+            <label id="gender"> 
+	            <input id="gender_male" type="radio" name="gender_male">
+		        <label for="gender_male">Male</label>
+	            <input id="gender_female" type="radio" name="gender_female">
+		        <label for="gender_female">Female</label>
+                
+            </label>
+           
+            <br>
+            <br>
+            <div class="namacity">City</div>
+            <br>
+            <select name="city" id="city">City <br>
+                <option value="">Jakarta</option>
+                <option value="Jakarta Barat">Jakarta Barat</option>
+                <option value="Jakarta Pusat">Jakarta Pusat</option>
+                <option value="Jakarta Selatan">Jakarta Selatan</option>
+                <option value="Jakarta Timur">Jakarta Timur</option>
+                <option value="Jakarta Utara">Jakarta Utara</option>
+            </select>
+            <br>
+            <br>
+        <div class="psw">
+          <label for="psw"><b>Password</b></label>
+        </div>
+        <br>
+        <div class="form__input-group">
+            <input type="password" placeholder="Enter Password"name="psw" id="password"class="password">
+            <div class="form__input-error-message"></div>
+        </div>
+        
+        <div class="form-border"></div>
+        <br>
+        <br>
+        <div class="psw-repeat">
+          <label for="psw-repeat"><b>Confirm Password</b></label>
+        </div>
+        <br>
+        <div class="form__input-group">
+            <input type="password" placeholder="Confirm Password" name="psw-repeat" id="confirm-password"class="confirm-password">
+            <div class="form__input-error-message"></div>
+        </div>
+       
+        <div class="form-border"></div>
+        <br>
+        <br>
+        <div class="wrapper">
+                
+            <button type="submit"class="clearfix" id="button-form">Register</button>
+        </div>
+        </div>
+    </form>
+</div>
+    <nav id="footer">
+        <div class="up">
+            <a href="https://id-id.facebook.com/"><img src="./facebook.png"width="20px"></a>
+            <a href="https://www.instagram.com/?hl=id"><img src="./ig.png"width="20px"></a>
+            <a href="https://twitter.com/i/flow/login"><img src="./twitter.jpg"width="20px"></a>
+        </div>
+        <div class="down">
+            Copyright © 2022[JimmyChristopher]. All Rights Reserved.
+        </div>
+    </nav>
+        
+      <script src="register.js"></script>
+</body>
+</html>
